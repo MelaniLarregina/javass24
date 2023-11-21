@@ -90,7 +90,7 @@ while(seguir === 's'){
       let monto = prompt ("Ingresa cuanto dinero quieres solicitar:  ");
       monto = parseInt (monto);
 
-      let cuotas = prompt ("En cuantas cuotas: 6 , 9 , 12 , 24");
+      let cuotas = prompt ("En cuantas cuotas: 6, 9 , 12, 24");
 
       let total = monto + InteresesCuotas (monto , cuotas);
       let totalConIva = total + ivaPrestamo(total);
@@ -99,6 +99,7 @@ while(seguir === 's'){
       alert("Cuotas: " + cuotas);
       alert("Total con intereses: " + total);
       alert("Total con intereses e iva: " + totalConIva);
+
       
       arrayPersonas[i] = persona;
       seguir = prompt("Desea seguir? (s/n)");
